@@ -18,7 +18,7 @@ Opinion Price Chart is a Flutter application that displays real-time price data 
 ---
 ## 🛠 Technologies and Frameworks Used
 - <img src="https://user-images.githubusercontent.com/25181517/186150365-da1eccce-6201-487c-8649-45e9e99435fd.png" alt="Flutter" width="20" height="20"> Flutter Framework (Dart language)
-- <img src="readmeimages/provider.svg" alt="Bloc" width="20" height="20"> Bloc (for state management)
+- <img src="readmeimages/bloclogo.png" alt="Bloc" width="20" height="20"> Bloc (for state management)
 
 
 
