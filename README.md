@@ -23,6 +23,12 @@ Opinion Price Chart is a Flutter application that displays real-time price data 
 ### 6. Timer Control:
 - Pause/play button to manage the update timer for data refresh.
 
+---
+### Note
+
+I initially used the fl_charts package, but its recent version lacked zoom and pan functionality. Therefore, I switched to the syncfusion_flutter_charts package, which provided these features.
+
+Additionally as said, I explored and used Bloc instead of Provider for state management.
 
 ---
 ## 🛠 Technologies and Frameworks Used
