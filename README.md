@@ -6,6 +6,10 @@
 ## 🔰 Project Overview
 Opinion Price Chart is a Flutter application that displays real-time price data fetched from Firestore and visualizes it using Syncfusion Flutter Charts.The chart automatically refreshes every few seconds to show the latest price changes.
 
+## Project app demo
+ https://drive.google.com/file/d/1Ly98kNdEoCFjfinbiIaSzsMReSsxCIt5/view?usp=drivesdk
+
+ App Link - https://github.com/sahilpotdukhe/opinions_price_chart/blob/master/app-arm64-v8a-release.apk
 
 ---
 ## ➤ Key Features
