@@ -4,15 +4,24 @@
 
 
 ## 🔰 Project Overview
-Opinion Price Chart is a Flutter application that displays real-time price data fetched from Firestore and visualizes it using Syncfusion Flutter Charts.
+Opinion Price Chart is a Flutter application that displays real-time price data fetched from Firestore and visualizes it using Syncfusion Flutter Charts.The chart automatically refreshes every few seconds to show the latest price changes.
 
 
 ---
 ## ➤ Key Features
 
-- Real-time price updates fetched from Firestore.
-- Line chart visualization using Syncfusion Flutter Charts.
-- Start/Stop timer functionality to control data updates.
+### 1. Real-time Updates:
+ - Automatic refresh of price points every few seconds to display the latest data.
+### 2. Interactive Tooltips and Markers: 
+- Tap on data points to view tooltips or markers for specific values.
+### 3. Zoom and Pan Functionality: 
+ - Smooth navigation and exploration of chart data for detailed analysis.
+### 4. Firestore Integration:
+ - Automatic logging of price and current time data to Firestore every 10 seconds.
+### 5. User-Friendly Interface:
+ - Includes legends or labels for easy understanding of the chart.
+### 6. Timer Control:
+- Pause/play button to manage the update timer for data refresh.
 
 
 ---
@@ -52,26 +61,8 @@ static Widget buildChart(BuildContext context, List<PriceData> priceHistory) {
             priceHistory.indexOf(time).toDouble() * 10,
             yValueMapper: (PriceData price, _) =>
                 price.price.round().toDouble(),
-            color: Colors.green,
-            width: 3,
-            opacity: 0.7,
-            markerSettings: const MarkerSettings(
-              isVisible: true,
-              shape: DataMarkerType.circle,
-              color: Colors.green,
-              borderWidth: 2,
-              borderColor: Colors.green,
-            ),
             dataLabelSettings: const DataLabelSettings(isVisible: true),
             enableTooltip: true,
-          ),
-          SplineAreaSeries<PriceData, double>(
-            dataSource: priceHistory,
-            xValueMapper: (PriceData time, _) =>
-            priceHistory.indexOf(time).toDouble() * 10,
-            yValueMapper: (PriceData price, _) =>
-                price.price.round().toDouble(),
-            color: Colors.green.withOpacity(0.3),
           ),
         ],
         tooltipBehavior: TooltipBehavior(
@@ -86,7 +77,6 @@ static Widget buildChart(BuildContext context, List<PriceData> priceHistory) {
       ),
     );
   }
-.............
 }
 ```
 
